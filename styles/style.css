@@ -33,6 +33,9 @@ img {
   display: block;
 }
 
+/* mobile-first approach styles for viewport smaller than 960px as default */
+
+/* styles for viewport 960px or larger */
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
