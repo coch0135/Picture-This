@@ -33,17 +33,9 @@ img {
   display: block;
 }
 
-/* mobile-first approach styles for viewport smaller than 960px as default */
 
-/* styles for viewport 960px or larger */
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-/* 
-Add the appropriate HTML / CSS, so that if the viewport is smaller than 960px, the image will be displayed in landscape and at an adequate resolution.
-
-Add the appropriate HTML / CSS, so that if the viewport is 960px or larger, the image displayed is square and at an adequate resolution. 
-*/
