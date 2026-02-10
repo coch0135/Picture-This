@@ -17,57 +17,64 @@
       <h4>My Really Cool Blog Post</h4>
     </div>
 
-    <picture>
+    <!-- used template from https://imdac.github.io/modules/html/responsive-images/art-direction.html#resolution-switching-example with modifications and corrections from Clark: mixing min-width and max-width, missing () -->
+
+    <picture> <!-- adds picture tag to the image -->
+      
+      <!-- creates srcset of resized landscape images for viewports 319px and under at adequate resolution -->
       <source srcset="images/museum.jpg,
                     images/museum-640x.jpg 2x,
                     images/museum-960x.jpg 3x" 
                     media="(max-width: 319px)" />
 
+      <!-- creates srcset of resized landscape images for viewports 319px-320px at adequate resolution -->
       <source srcset="images/museum-320x.jpg,
                     images/museum-640x.jpg 2x,
                     images/museum-960x.jpg 3x" 
                         media="(max-width: 320px)" />
 
+      <!-- creates srcset of resized landscape images for viewports 321px-480px at adequate resolution -->
       <source srcset="images/museum-480x.jpg,
                         images/museum-960x.jpg 2x,
                         images/museum-1440x.jpg 3x" 
                         media="(max-width: 480px)" />
 
+      <!-- creates srcset of resized landscape images for viewports 481px-720px at adequate resolution -->
       <source srcset="images/museum-720x.jpg,
                         images/museum-1440x.jpg 2x,
                         images/museum-2160x.jpg 3x" 
                         media="(max-width: 720px)" />
 
+       <!-- creates srcset of resized landscape images for viewports 721px-959px at adequate resolution -->                 
       <source srcset="images/museum-960x.jpg,
                         images/museum-1920x.jpg 2x,
                         images/museum-2880x.jpg 3x" 
                         media="(max-width: 959px)" />
 
+      <!-- creates srcset of resized landscape images for viewports 959px-960px at adequate resolution -->                        
       <source srcset="images/museum-480x480.jpg,
                         images/museum-960x960.jpg 2x,
                         images/museum-1440x1440.jpg 3x" 
                         media="(max-width: 960px)" />
 
+      <!-- creates srcset of resized square images for viewports 961px-1280px at adequate resolution -->
       <source srcset="images/museum-640x640.jpg,
                         images/museum-1280x1280.jpg 2x,
                         images/museum-1920x1920.jpg 3x" 
                         media="(max-width: 1280px)" />
 
+      <!-- creates srcset of resized square images for viewports 1281px-1600px at adequate resolution -->                  
       <source srcset="images/museum-800x800.jpg,
                         images/museum-1600x1600.jpg 2x,
                         images/museum-2400x2400.jpg 3x" 
                         media="(max-width: 1600px)" />
+      
+      <!-- maintains original image with more descriptive alt text -->
+      <img class="orig-img" src="images/museum.jpg" alt="bench in a museum"> 
 
-      <img class="orig-img" src="images/museum.jpg" alt="bench in a museum">
-    </picture>
+    </picture> <!-- closes picture tag -->
 
   </header>
 </body>
 
 </html>
-
-<!-- 
-Add the appropriate HTML / CSS, so that if the viewport is smaller than 960px, the image will be displayed in landscape and at an adequate resolution.
-
-Add the appropriate HTML / CSS, so that if the viewport is 960px or larger, the image displayed is square and at an adequate resolution. 
--->
